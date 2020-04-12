@@ -3,14 +3,14 @@
 
 ## Install
 
-### `$ npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome`
+ `$ npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome`
 
-### `npm i react-flip-move`
+ `npm i react-flip-move`
 
-### `npm install`
+ `npm install`
 
 
 ## Usage
 
 
-### `npm start`
+ `npm start`
