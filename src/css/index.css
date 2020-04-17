@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.box {
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.top-header {
+  background-color: #3a5684;
+  padding: 30px 40px;
+  color: #fff;
+  text-align: center;
+}
+
+#to-do-form input {
+  background-color: #f1f1f1;
+  border: 0;
+  width: 500px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #000;
+}
+
+#to-do-form input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#to-do-form button {
+  border: none;
+  outline: none;
+  background-color: #343733;
+  color: #fff;
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#to-do-form button:hover {
+  outline: none;
+  background-color: #000;
+}
+
+#to-do-form button:focus {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  font-size: 18px;
+  background-color: #ccccff;
+  padding: 12px 8px 12px 40px;
+}
+
+ul li:nth-child(odd) {
+  background-color: #9999cc;
+}
+
+ul li:hover {
+  background-color: #6666cc;
+}
+
+.trash {
+  position: absolute;
+  left: 700px;
+  top: 18px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+.trash:hover {
+  opacity: 0.4;
+}
