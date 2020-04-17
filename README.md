@@ -4,7 +4,7 @@ A simple Todo-App built with React
 
 ## Try it
 
-https://github.com/mide21/Todo-App
+https://github.com/mide21/react-todo-app
 
 ## Install
 
