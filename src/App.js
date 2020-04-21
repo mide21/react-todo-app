@@ -19,7 +19,7 @@ class TodoApp extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
     }
-  
+
     handleChange(e) {
         this.setState({
             currentItem: {
@@ -28,7 +28,7 @@ class TodoApp extends React.Component {
             }
         })
     }
-  
+
     handleSubmit(e) {
         e.preventDefault();
         const newItem = this.state.currentItem;
@@ -42,9 +42,9 @@ class TodoApp extends React.Component {
                 }
             });
         }
-  
+
     }
-  
+
     handleDelete(key) {
         const filteredItems = this.state.items.filter(item =>
             item.key !== key)
@@ -52,25 +52,31 @@ class TodoApp extends React.Component {
             items: filteredItems
         })
     }
-  
+
     render() {
         return (
-            <header>
-                <div className="top-header">
-                    <h2>My Todo List</h2>
-                    <form id="to-do-form" onSubmit={this.handleSubmit}>
-                        <input type="text" placeholder="What to do ........"
-                            onChange={this.handleChange}
-                            value={this.state.currentItem.text} />
-                        <button type="submit">
-                            Add
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="box">
+                        <header>
+                            <div className="top-header">
+                                <h2>My Todo List</h2>
+                                <form id="to-do-form" onSubmit={this.handleSubmit}>
+                                    <input type="text" placeholder="What to do ........"
+                                        onChange={this.handleChange}
+                                        value={this.state.currentItem.text} />
+                                    <button type="submit">
+                                        Add
                         </button>
-                    </form>
+                                </form>
+                            </div>
+                            <TodoList handleDelete={this.handleDelete} items={this.state.items}></TodoList>
+                        </header>
+                    </div>
                 </div>
-                <TodoList handleDelete={this.handleDelete} items={this.state.items}></TodoList>
-            </header>
+            </div>
         );
     }
-  }
+}
 
 export default TodoApp;
